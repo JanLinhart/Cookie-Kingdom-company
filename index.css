@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.hero-container{
+    height: 100vh;
+    background:radial-gradient(white,salmon);
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+   
+    
+
+}
+nav{
+    display: flex;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 40px;
+    
+   
+    
+}
+nav .logo{
+    flex:1;
+    margin-left: 20px;
+    margin-top:5px;
+    
+}
+ul{
+    display: flex;
+    list-style:none;
+    
+}
+ul li a{
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li a::after{
+content: '';
+position:absolute;
+width: 50%;
+height: 5px;
+background-color: brown;
+border-radius: 5px;
+bottom:0;
+left:25%;
+transform: scaleX(0);
+cursor: pointer;
+}
+ul li a:hover::after{
+    transform: scaleX(1);
+    
+    
+    }
+ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+ul li{
+    margin-right: 40px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+   
+    
+    
+}
+ .hero-container img{
+    width:70%;
+    
+    
+    
+}
+.column1 h2{
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 60px;
+    
+}
+.column1 p{
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 20px;
+}
+.text{
+    padding:200px;
+}
+.classic{
+    height:3rem;
+    width:14rem;
+    border-radius: 3px;
+    border:none;
+    background-color:brown;
+    color:white;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    margin-top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 3px black;
+    position: relative;
+}
+.classic::after{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    background-color: salmon;
+    border-radius: 3px;
+    opacity:0.6;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition:ease-in 0.2s;
+    cursor: pointer;
+    
+    }
+.info-section{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:radial-gradient(white,salmon);
+}
+    .classic:hover::after{
+        transform: scaleX(1);
+        
+        
+        }
+    
+.row2{
+    display:flex;
+    
+    
+}
+.row2 img{
+    width: 100%;
+    height:100%;
+   
+}
+.column2 {
+    flex-basis: 60%;
+}
+.column3{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+  text-align:center;
+    background: rgb(78, 78, 78);
+   flex-basis:40%;
+   font-family: 'Big Shoulders Inline Text', cursive;
+   color:white;
+
+}
+.column3 h2{
+    padding-bottom: 20px;
+    position: relative;
+}
+.column3 p{
+    padding-top:20px;
+}
+.column3 h2::after{
+    content: " ";
+    position: absolute;
+    border-bottom: 12px solid salmon;
+    width:20%;
+    bottom: 0;
+    left:39%;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+.products-section{
+    background-color:gray;
+    display:flex;
+    flex-direction:column;
+    
+}
+.row4{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.row5{
+    display:flex;
+    align-items: center;
+    margin-right: 50%;
+
+}
+.row6{
+    display:flex;
+    align-items: center;
+}
+.products-section img{
+width:80%;
+padding:100px;
+
+
+}
+.products-section .rainbow{
+    width:100%;
+    padding:100px;
+    
+    
+    }
+.products-section .chocolate{
+    width:100%;
+    
+    
+    
+    }
+
+.products-section h3{
+   align-self: center;
+    font-size: 3rem;
+    position: relative;
+    margin-top:30px;
+}
+.products-section{
+    font-family: 'Big Shoulders Inline Text', cursive;
+}
+.products-section h3::after{
+    content: " ";
+    position: absolute;
+    border-bottom: 12px solid salmon;
+    width:50%;
+    left:28%;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    
+}
+.customers{
+    position: relative;
+    height: 50vh;
+    background-color:rgb(78, 78, 78);
+    align-items: center;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    
+}
+.customerss{
+    display:flex;
+}
+.customer{
+    width:350px;
+    height:200px;
+    background-color:white;
+    margin:50px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 10;
+    
+}
+.customers img{
+    width:30%;
+    height:50%;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1rem;
+    
+}
+.customer h2,
+.customer p{
+    position:absolute;
+    padding:1rem;
+}
+.customer h2{
+    left:100px;
+    top:10px;
+    color:salmon;
+    text-shadow:1px 1px gray;
+}
+.square {
+ position: absolute;  
+ transform: rotate(40deg);
+ left:0;
+ top:0;  
+ width:20%;
+ height:20%;  
+ object-fit: cover;
+   
+
+}
+.square2 {
+    
+    right:30px;
+    bottom:0;
+    position:absolute;
+    z-index:0;
+    transform: rotate(-30deg);
+    width:20%;
+    height:20%;
+    object-fit: cover;
+   
+
+}
+
+
+.footer{
+    display:flex;
+    justify-content:space-evenly;
+    height: 120px;
+    align-items:center;
+    font-family: 'Big Shoulders Inline Text', cursive;
+    background-color: salmon;
+    text-align: center;
+}
+.footer .icons{
+    font-size: 2rem;
+}
+.hello{
+    flex-direction: row-reverse;
+}
+nav .menu{
+    display: none;
+}
+
+@media all and (max-width: 768px){
+    html, body {
+       
+        overflow-x: hidden;
+    }
+
+.row1{
+flex-direction: column; 
+
+
+}
+.row1 img{
+    max-width: 40%;
+    margin-left: 50%;
+    
+}
+.row1 .pic{
+    margin-left: 50%;
+}
+.row2{
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.products-section .row4,
+.products-section .row5{
+flex-direction: column;
+}
+.products-section{
+    flex-direction: column;
+    
+    
+}
+.products-section h3{
+    
+    font-size: 3rem;
+    position: relative;
+    margin-top:30px;
+}
+
+.row4,.row5{
+    padding:0px;
+}
+.products-section img{
+    width:100%;
+    }
+.row4{
+    margin-left: 0%;
+    
+}
+
+
+.hero-container img{
+    padding-top: 20px;
+    
+}
+.row5{
+    margin-left: 0%;
+}
+.products-section .rainbow {
+    width: 40%;
+    padding: 10px;
+    margin-left: 20%;
+}
+.products-section .chocolate {
+   
+    padding: 30px;
+    
+    
+}
+.text {
+    padding: 0px;
+    padding-top: 50%;
+}
+.column6{
+    margin-left: 0%;
+    text-align:left;
+    width:100%;
+    
+}
+.pad{
+    padding-bottom: 10px;
+}
+nav ul{
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    background-color:salmon;
+    justify-content:space-around;
+    align-items: center;
+    right:0;
+    top:0vh;
+    z-index: 10;
+    max-width:50%;
+    transform: translateX(100%);
+    position: fixed;
+    transition: transform 0.5s ease-in;
+}
+
+.customerss{
+    flex-direction: column;
+}
+.customer{
+    width:100%;
+    margin:0;
+    
+}
+nav .menu{
+    display:block;
+    margin-right: 10px;
+    z-index: 10;
+    
+}
+.customers{
+    height:100%;
+}
+.square,
+.square2{
+    display:none;
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.products-section .column4,
+.products-section .column7,
+.products-section .column6{
+    text-align:center;
+}
+}
+
+
+
